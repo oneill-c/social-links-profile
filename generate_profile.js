@@ -7,6 +7,8 @@ const html = ejs.render(template, data);
 
 const outputDir = "public";
 const outputFile = "public/index.html";
+const imageSource = "assets/images/me.jpeg";
+const imageDestination = "public/me.jpeg";
 
 try {
   fs.mkdirSync(outputDir);
@@ -28,4 +30,11 @@ try {
   console.log("File written successfully!");
 } catch (err) {
   console.error("Error writing file:", err);
+}
+
+try {
+  fs.copyFileSync(imageSource, imageDestination);
+  console.log("Assets copied successfully!");
+} catch (err) {
+  console.error("Error copying image file:", err);
 }
