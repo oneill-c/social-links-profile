@@ -1,0 +1,13 @@
+{
+  "title": "Social links profile",
+  "user": {
+    "name": "Cary O'Neill",
+    "location": "Chicago, IL",
+    "blurb": "Full Stack Developer and Guitarist",
+    "instagram": "https://www.instagram.com/laheytheliquor",
+    "facebook": "https://www.facebook.com/laheytheliquor",
+    "x": "https://twitter.com/oneill__c",
+    "linkedin": "https://www.linkedin.com/in/cary-o-neill-36524548",
+    "github": "https://github.com/oneill-c"
+  }
+}

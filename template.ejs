@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/normalize.css-master/normalize.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title><%= title %></title>
+    <style>
+      body {
+        background-color: hsl(0, 0%, 8%);
+        font-family: 'Inter';
+        color: hsl(0, 0%, 100%)
+      }
+      
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card {
+        background-color: hsl(0, 0%, 12%);
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem;
+        border-radius: .5rem;
+      }
+
+      /* Phones */
+      @media (max-width: 767px) {
+        .card {
+          min-width: 300px; /* Adjust minimum width for phones */
+        }
+      }
+
+      /* Tablets */
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .card {
+          min-width: 500px; /* Adjust minimum width for tablets */
+        }
+      }
+
+      /* Small desktops */
+      @media (min-width: 1024px) and (max-width: 1279px) {
+        .card {
+          min-width: 800px; /* Adjust minimum width for small desktops */
+        }
+      }
+
+      /* Larger desktops */
+      @media (min-width: 1280px) {
+        .card {
+          min-width: 400px; /* Adjust minimum width for small desktops */
+        }
+      }
+
+      .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile > * {
+        padding: 0 0 .8rem 0;
+      }
+
+      .img {
+        border-radius: 9999px;
+        width: 8rem;
+        height: 8rem;
+        object-fit: contain;
+      }
+
+      .personal-details > * {
+        /* padding: .2rem 0 .2rem 0; */
+        text-align: center;
+      }
+  
+      .name {
+        font-size: large;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .location {
+        color: hsl(75, 94%, 57%);
+      }
+
+      .btn-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+
+      .btn-container > .btn {
+        margin: .5rem 0 .5rem 0;
+      }
+
+      .btn {
+        color: inherit;
+        background-color: hsl(0, 0%, 20%);
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0 1rem 0;
+        border-radius: .5rem;
+        border: none;
+        text-decoration: none;
+      }
+
+      .btn:hover {
+        background-color: #C2E259;
+        cursor: pointer;
+        color: hsl(0, 0%, 20%);
+      }
+
+      .attribution {
+        margin-top: .5rem;
+        font-size: 11px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="profile">
+          <img class="img" src="assets/images/me.jpeg" alt="Me">
+          <div class="personal-details">
+            <h3 class="name"><%= user.name %></h3>
+            <p class="location"><%= user.location %></p>
+          </div>
+          <div class="blurb">"<%= user.blurb %>"</div>
+        </div>
+        <div class="btn-container">
+          <a class="btn" href="<%= user.instagram %>" target="_blank">Instagram</a>
+          <a class="btn" href="<%= user.facebook %>" target="_blank">Facebook</a>
+          <a class="btn" href="<%= user.x %>" target="_blank">X</a>
+          <a class="btn" href="<%= user.linkedin %>" target="_blank">LinkedIn</a>
+          <a class="btn" href="<%= user.github %>" target="_blank">Github</a>
+        </div>
+      </div>
+      <div class="attribution">
+        <p></p>Coded with &#x2764; by Cary O'Neill</p>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
