@@ -4,6 +4,9 @@ A simple [EJS](https://ejs.co/) template that when rendered will output a lightw
 
 It is the perfect way to keep all your socials links in one place. Even link it from the bio of each of your social media profiles so your followers can find you on other platforms
 
+## A picture is worth 1000 words
+![collage](https://storage.photojoiner.com/api/attachments/file/2024-03-03/upload_6139a1f0aa4824f7fe2b9d13e4f3576e.jpg)
+
 ## How to use
 
 1. Clone or download the code as a zip file from here.
